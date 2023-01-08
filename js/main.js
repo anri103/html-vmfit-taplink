@@ -163,7 +163,7 @@ jQuery(document).ready(function ($) {
 					spaceBetween: 15,
 				},
 				992: {
-					slidesPerView: 3,
+					slidesPerView: 4,
 					spaceBetween: 20,
 				},
 			},
