@@ -8,12 +8,10 @@
   <meta name="description"
     content="Тренировки в фитес-зале Fitnation на Домодедовской в Москве с персональным тренером Викторией Vika.Sfit">
   <meta name="author" content="Andrey Galkin">
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/css/icons.css">
-  <link rel="stylesheet" href="/css/glightbox.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".site-navbar-target" data-bs-offset="300">
@@ -58,7 +56,7 @@
           <!-- logo -->
           <div class="site-logo">
             <a href="/">
-              <img src="/img/logo.png" alt="logo">
+              <img src="img/logo.png" alt="logo">
             </a>
           </div>
           <!-- site-navigation -->
@@ -97,7 +95,7 @@
     <main class="main">
 
       <!-- Твой персональный тренер -->
-      <section class="section section-01 d-flex align-items-center color-2" id="section-01" style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/section-01-bg-04.jpg);">
+      <section class="section section-01 d-flex align-items-center color-2" id="section-01" style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
@@ -130,29 +128,27 @@
                   <div class="swiper about-slider">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <a class="d-block gallery-1" href="img/about-01.jpg">
-                          <img class="rounded-3" src="img/about-01.jpg" alt="">
-                        </a>
+                        <img class="rounded-3" src="img/about-01.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <a class="d-block gallery-1" href="img/about-05.jpg">
-                          <img class="rounded-3" src="img/about-05.jpg" alt="">
-                        </a>
+                        <img class="rounded-3" src="img/about-02.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <a class="d-block gallery-1" href="img/about-09.jpg">
-                          <img class="rounded-3" src="img/about-09.jpg" alt="">
-                        </a>
+                        <img class="rounded-3" src="img/about-03.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <a class="d-block gallery-1" href="img/about-13.jpg">
-                          <img class="rounded-3" src="img/about-13.jpg" alt="">
-                        </a>
+                        <img class="rounded-3" src="img/about-04.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-3" src="img/about-05.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-3" src="img/about-06.jpg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-next about-slider-next"></div>
-                  <div class="swiper-button-prev about-slider-prev"></div>
+                  <div class="swiper-button-next" id="about-next"></div>
+                  <div class="swiper-button-prev" id="about-prev"></div>
                 </div>
               </div>
             </div>
@@ -192,240 +188,6 @@
         </div>
 
         <div class="section-04__container-02">
-          <!-- <div class="container">
-            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link btn-lg active" id="pills-home-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                  aria-selected="true">Для одного</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link btn-lg color-2" id="pills-profile-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                  aria-selected="false">Вдвоём</button>
-              </li>
-            </ul>
-
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home">
-                <div class="position-relative">
-                  <div class="swiper price-slider-01">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>Первая тренировка</h3>
-                            <div class="price">
-                              <strong>Бесплатно</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Ознакомительный вводный инструктаж</li>
-                              <li>Работа с тренажерами</li>
-                              <li>Постановка техники</li>
-                              <li>Общая информация по питанию и расчёту КБЖУ</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>1 тренировка</h3>
-                            <div class="price">
-                              <strong>2500 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>5 тренировок</h3>
-                            <div class="price">
-                              <strong>11000 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>1-2 раза в неделю</li>
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>10 тренировок</h3>
-                            <div class="price">
-                              <strong>20000 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>2-3 раза в неделю</li>
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>Консультация по питанию без проведения тренировок</h3>
-                            <div class="price">
-                              <strong>4000 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Расчёт КБЖУ</li>
-                              <li>Составление плана питания</li>
-                              <li>Корректировки</li>
-                              <li>Разбор ошибок и ваших вопросов</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-next price-01-next"></div>
-                  <div class="swiper-button-prev price-01-prev"></div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="pills-profile">
-                <div class="position-relative">
-                  <div class="swiper price-slider-02">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>Первая тренировка</h3>
-                            <div class="price">
-                              <strong>Бесплатно</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Ознакомительный вводный инструктаж</li>
-                              <li>Работа с тренажерами</li>
-                              <li>Постановка техники</li>
-                              <li>Общая информация по питанию и расчёту КБЖУ</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>1 тренировка</h3>
-                            <div class="price">
-                              <strong>3200 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>5 тренировок</h3>
-                            <div class="price">
-                              <strong>14500 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>1-2 раза в неделю</li>
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>10 тренировок</h3>
-                            <div class="price">
-                              <strong>28000 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>2-3 раза в неделю</li>
-                              <li>Уменьшение жировой прослойки</li>
-                              <li>Улучшение пропорции и качества тела</li>
-                              <li>Получение рельефа</li>
-                              <li>Набор мышечной массы</li>
-                              <li>Расчёт КБЖУ исходя из ваших целей</li>
-                              <li>Составлю меню исходя из ваших предпочтений</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="pricing-box">
-                          <div class="flex-grow-2 mb-5">
-                            <h3>Консультация по питанию без проведения тренировок</h3>
-                            <div class="price">
-                              <strong>4000 руб.</strong>
-                            </div>
-                            <ul class="description">
-                              <li>Расчёт КБЖУ</li>
-                              <li>Составление плана питания</li>
-                              <li>Корректировки</li>
-                              <li>Разбор ошибок и ваших вопросов</li>
-                            </ul>
-                          </div>
-                          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#feedbackFormModal">Записаться</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-next price-02-next"></div>
-                  <div class="swiper-button-prev price-02-prev"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="container">
             <div class="position-relative">
               <div class="swiper price-slider-01">
@@ -590,33 +352,23 @@
               <div class="swiper-wrapper">
                 <!-- item-1 -->
                 <div class="swiper-slide">
-                  <a class="d-block gallery-2" href="img/otzyv-01.jpg">
-                    <img class="rounded-3" src="img/otzyv-01.jpg" alt="">
-                  </a>
+                  <img class="rounded-3" src="img/otzyv-01.jpg" alt="">
                 </div>
                 <!-- item-2 -->
                 <div class="swiper-slide">
-                  <a class="d-block gallery-2" href="img/otzyv-02.jpg">
-                    <img class="rounded-3" src="img/otzyv-02.jpg" alt="">
-                  </a>
+                  <img class="rounded-3" src="img/otzyv-02.jpg" alt="">
                 </div>
                 <!-- item-3 -->
                 <div class="swiper-slide">
-                  <a class="d-block gallery-2" href="img/otzyv-03.jpg">
-                    <img class="rounded-3" src="img/otzyv-03.jpg" alt="">
-                  </a>
+                  <img class="rounded-3" src="img/otzyv-03.jpg" alt="">
                 </div>
                 <!-- item-4 -->
                 <div class="swiper-slide">
-                  <a class="d-block gallery-2" href="img/otzyv-04.jpg">
-                    <img class="rounded-3" src="img/otzyv-04.jpg" alt="">
-                  </a>
+                  <img class="rounded-3" src="img/otzyv-04.jpg" alt="">
                 </div>
                 <!-- item-5 -->
                 <div class="swiper-slide">
-                  <a class="d-block gallery-2" href="img/otzyv-05.jpg">
-                    <img class="rounded-3" src="img/otzyv-05.jpg" alt="">
-                  </a>
+                  <img class="rounded-3" src="img/otzyv-05.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -679,7 +431,6 @@
 
   </div>
   <!-- End Site-wrap -->
-
 
 
   <!-- All Modals-->
@@ -954,14 +705,13 @@
   <!-- End Policy Modal-->
 
   <!-- All Scripts-->
-  <script src="/js/fontawesome-v5-15-4.js" crossorigin="anonymous"></script>
+  <script src="js/fontawesome-v5-15-4.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/process-forms.js"></script>
+  <script src="js/main.js"></script>
 
-  <script src="/js/jquery-3.6.0.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/swiper-bundle.min.js"></script>
-  <script src="/js/glightbox.min.js"></script>
-  <script src="/js/process-forms.js"></script>
-  <script src="/js/main.js"></script>
 </body>
 
 </html>

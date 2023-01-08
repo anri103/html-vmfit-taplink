@@ -27,9 +27,11 @@ Version: 1.1
 
 /* BASE STYLES */
 
-body {
-	width: 100%;
+html {
 	scroll-behavior: smooth;
+}
+
+body {
 	font-family: var(--font-main);
 	font-size: 18px;
 	font-weight: var(--fw-500);
@@ -410,22 +412,6 @@ a:not([class]) {
 .ul-check.primary li:before {
 	color: #333
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Site Menu */
 
@@ -1000,33 +986,6 @@ a:not([class]) {
 	font-size: 32px;
 	padding: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ----------------------------------------- */
 /* ----------------- MEDIA ----------------- */

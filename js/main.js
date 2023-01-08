@@ -124,8 +124,8 @@ jQuery(document).ready(function ($) {
 				disableOnInteraction: false,
 			},
 			navigation: {
-				nextEl: '.about-slider-next',
-				prevEl: '.about-slider-prev',
+				nextEl: '#about-next',
+				prevEl: '#about-prev',
 			},
 		});
 
@@ -143,26 +143,6 @@ jQuery(document).ready(function ($) {
 					spaceBetween: 15,
 				},
 				1200: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-			},
-		});
-
-		const swiper3 = new Swiper('.price-slider-02', {
-			loop: false,
-			slidesPerView: 1,
-			spaceBetween: 10,
-			navigation: {
-				nextEl: '.price-02-next',
-				prevEl: '.price-02-prev',
-			},
-			breakpoints: {
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 15,
-				},
-				992: {
 					slidesPerView: 3,
 					spaceBetween: 20,
 				},
@@ -189,18 +169,5 @@ jQuery(document).ready(function ($) {
 			},
 		});
 	});
-
-	// GLightbox
-
-	$(function () {
-		const lightboxGallery1 = GLightbox({
-			selector: '.gallery-1'
-		});
-
-		const lightboxGallery2 = GLightbox({
-			selector: '.gallery-2'
-		});
-	});
-
 
 });
