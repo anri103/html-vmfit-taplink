@@ -40,7 +40,6 @@ Version: 1.1
 	--fw-regular: 400;
 	--fw-medium: 500;
 	--fw-black: 900;
-
 	--bs-body-font-family: var(--ff-main);
 	--bs-body-font-size: 1.125rem;
 	--bs-body-font-weight: var(--fw-medium);
@@ -138,21 +137,9 @@ a {
 /*//////////////////////////////////////////////////////////////////
 [ FORMS ]*/
 
-.form-control {
-	height: 55px;
-}
-
-.form-control:active,
 .form-control:focus {
 	border-color: #000;
-}
-
-.form-control:hover,
-.form-control:focus,
-.form-control:active {
-	outline: none;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
+	box-shadow: none;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -188,12 +175,18 @@ a {
 	background-color: var(--color-5);
 }
 
-.btn-xl {
-	padding: 18px 38px;
+.btn-xl, .btn-group-xl > .btn {
+	--bs-btn-padding-y: 1rem;
+  	--bs-btn-padding-x: 2.25rem;
+  	--bs-btn-font-size: 1.5rem;
+  	--bs-btn-border-radius: 0.75rem;
 }
 
-.btn-lg {
-	padding: 12px 32px;
+.btn-lg, .btn-group-lg > .btn {
+	--bs-btn-padding-y: 0.75rem;
+  	--bs-btn-padding-x: 2rem;
+  	--bs-btn-font-size: 1.25rem;
+  	--bs-btn-border-radius: 0.5rem;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -403,8 +396,8 @@ svg {
 [ FOOTER ]*/
 
 .footer {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 .footer a {
@@ -438,12 +431,12 @@ svg {
 }
 
 .section-04__container-01 {
-	padding-top: 80px;
-	padding-bottom: 320px;
+	padding-top: 5rem;
+	padding-bottom: 20rem;
 }
 
 .section-04__container-02 {
-	margin-top: -288px;
+	margin-top: -20rem;
 	padding-bottom: 0;
 }
 
