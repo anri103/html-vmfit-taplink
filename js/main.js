@@ -1,3 +1,13 @@
+const navbarToggler = document.body.querySelector('.navbar-toggler');
+const responsiveNavItems = [].slice.call( document.querySelectorAll('#navbarNav .nav-link'));
+responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItem.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
+        }
+    });
+});
+
 var form1 = feedbackForm();
 form1.init({
 	id: '#feedbackForm',

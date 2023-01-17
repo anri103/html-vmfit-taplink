@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".site-navbar-target" data-bs-offset="300">
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-smooth-scroll="true" tabindex="0">
 
   <!-- <div class="site-mobile-menu">
     <div class="site-mobile-menu-body">
@@ -41,8 +41,9 @@
     </div>
   </div> -->
 
+  <!-- HEADER -->
   <header class="header bg-dark fixed-top">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
       <div class="container">
 
         <a class="navbar-brand" href="/">
@@ -79,7 +80,7 @@
     </nav>
   </header>
 
-  <!-- Твой персональный тренер -->
+  <!-- SECTION-HERO -->
   <section class="section section-hero py-lg d-flex align-items-center text-white" id="section-hero"
     style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
     <div class="container">
@@ -100,9 +101,10 @@
     </div>
   </section>
 
+  <!-- MAIN -->
   <main class="main py-5">
 
-    <!-- CTA -->
+    <!-- SECTION-CTA -->
     <section class="section py-5">
       <div class="container">
         <div class="row justify-content-center">
@@ -133,7 +135,7 @@
       </div>
     </section>
 
-    <!-- Обо мне -->
+    <!-- SECTION-ABOUT -->
     <section class="section py-5" id="section-about">
       <div class="container">
         <div class="row gy-4">
@@ -185,7 +187,7 @@
       </div>
     </section>
 
-    <!-- Стоимость тренировок -->
+    <!-- SECTION-PRICE -->
     <section class="section py-5" id="section-price">
       <div class="bg-black" style="padding-top: 5rem; padding-bottom: 20rem;">
         <div class="container">
@@ -391,7 +393,7 @@
       </div>
     </section>
 
-    <!-- Отзывы -->
+    <!-- SECTION-TESTIMONIAL -->
     <section class="section py-5" id="section-testimonial">
       <div class="container">
         <div class="text-center mb-5">
@@ -478,7 +480,7 @@
     </div>
   </footer>
 
-  <!-- Feedback Modal -->
+  <!-- FEEDBACK FORM -->
   <div class="modal fade" id="feedbackFormModal" aria-labelledby="feedbackFormModalLabel" aria-hidden="true"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
@@ -545,7 +547,7 @@
     </div>
   </div>
 
-  <!-- All Scripts-->
+  <!-- SCRIPTS -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
