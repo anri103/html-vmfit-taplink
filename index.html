@@ -16,430 +16,456 @@
 
 <body data-bs-spy="scroll" data-bs-target=".site-navbar-target" data-bs-offset="300">
 
-  <div class="site-wrap">
-
-    <!-- <div class="site-mobile-menu">
-      <button class="js-menu-toggle" type="button">
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-        <span class="sr-only">Меню</span>
-      </button>
-      <div class="site-mobile-menu-body">
-        <div class="js-clone-body"></div>
-        <div class="py-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="https://api.whatsapp.com/send?phone=79250026602" class="nav-link">Написать в What'sApp</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://t.me/vika_sfit" class="nav-link">Написать в Telegram</a>
-            </li>
-            <li class="nav-item">
-              <a href="viber://chat?number=%2B79250026602" class="nav-link">Написать в Viber</a>
-            </li>
-            <li class="nav-item">
-              <a href="tel:+79250026602" class="nav-link">+7 925 002-66-02</a>
-            </li>
-            <li class="nav-item">
-              <a href="mailto:vikasfit@yandex.ru" class="nav-link">vikasfit@yandex.ru</a>
-            </li>
-          </ul>
-        </div>
+  <!-- <div class="site-mobile-menu">
+    <div class="site-mobile-menu-body">
+      <div class="js-clone-body"></div>
+      <div class="py-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="https://api.whatsapp.com/send?phone=79250026602" class="nav-link">Написать в What'sApp</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/vika_sfit" class="nav-link">Написать в Telegram</a>
+          </li>
+          <li class="nav-item">
+            <a href="viber://chat?number=%2B79250026602" class="nav-link">Написать в Viber</a>
+          </li>
+          <li class="nav-item">
+            <a href="tel:+79250026602" class="nav-link">+7 925 002-66-02</a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:vikasfit@yandex.ru" class="nav-link">vikasfit@yandex.ru</a>
+          </li>
+        </ul>
       </div>
-    </div> -->
-    <!-- End Mobile Menu-->
+    </div>
+  </div> -->
 
-    <!-- <header class="site-navbar bg-transparent fixed-top">
+  <header class="header bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="site-logo">
-            <a href="/">
-              <img src="img/logo.png" alt="logo">
-            </a>
+
+        <a class="navbar-brand" href="/">
+          <!-- <img class="logo" src="img/logo.png" alt="logo"> -->
+          Vmfit.ru
+        </a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarNav">
+          <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <nav class="site-navigation site-navbar-target" role="navigation">
-            <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-              <li class="nav-item">
-                <a href="#section-01" class="nav-link">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a href="#section-02" class="nav-link">Обо мне</a>
-              </li>
-              <li class="nav-item">
-                <a href="#section-04" class="nav-link">Цены</a>
-              </li>
-              <li class="nav-item">
-                <a href="#section-05" class="nav-link">Отзывы</a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                  data-bs-target="#feedbackFormModal">Записаться</button>
-              </li>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="#section-hero">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="#section-about">Обо мне</a></li>
+              <li class="nav-item"><a class="nav-link" href="#section-price">Цены</a></li>
+              <li class="nav-item"><a class="nav-link" href="#section-testimonial">Отзывы</a></li>
             </ul>
-          </nav>
-          <button class="js-menu-toggle d-lg-none" type="button">
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary d-none d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Записаться</button>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Твой персональный тренер -->
+    <section class="section section-hero py-lg d-flex align-items-center text-white" id="section-hero"
+      style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="mb-4">
+              <h1>Твой персональный тренер Vika.Sfit</h1>
+            </div>
+            <div class="mb-5 color-6">
+              <p>Хочешь любить то, что видишь в зеркале и быть лучшей версией себя?</p>
+              <p>А еще ты ищешь таблетку, которая тебе в этом поможет?!</p>
+              <p>Мои программы и комплексы - это то, что нужно, чтобы достичь твоих целей!</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#feedbackFormModal">Бесплатная консультация</button>
+          </div>
         </div>
       </div>
-    </header> -->
-    <!-- End Site-Navbar-->
+    </section>
 
-    <main class="main">
+    <section class="section py-lg">
+      <div class="container">
+        <p>10 домашних тренировок в прямом эфире в Телеграмм-канале + в записи в формате «Повторяй за мной», сможете тренироваться в любое время</p>
+        <p>Домашние тренировки без дополнительного оборудования, направленные на похудение и проработку рельефа тела</p>
+        <p>Примеры тренировок для зала (подойдут даже новичку) - их выполняем если есть желание - это в виде бонуса</p>
+        <p>Индивидуальный рассчет БЖУ</p>
+        <p>Контроль формы и проведение замеров</p>
+        <p>Контроль результатов (ежедневная проверка и контроль питания), лично мной, в личных переписках</p>
+        <p>Общий чат-болталка со мной и участницами</p>
+        <p>Примеры рационов на разную калорийность</p>
+        <p>Продуктовая корзина</p>
+        <p>Задания-челленджи на каждый день</p>
+        <p>Утренние комплексы для тела. Вы забудете о зажатости в спине, появится легкость и грациозность кошки (останутся у вас навсегда)</p>
+        <p>БОНУСЫ:</p>
+        <p>Сборник с рецептами</p>
+        <p>Чек-лист по борьбе с целлюлитом</p>
+      </div>
+    </section>
 
-      <!-- Твой персональный тренер -->
-      <section class="section section-01 py-lg d-flex align-items-center color-2" id="section-01" style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
+    <!-- Обо мне -->
+    <section class="section py-lg" id="section-about">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="swiper swiperAbout">
+              <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-01.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-02.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-03.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-04.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-05.jpg" alt="">
+                </div>
+                <div class="swiper-slide h-auto p-2">
+                  <img class="rounded-3" src="img/about-06.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <button type="button" class="btn btn-icon btn-prev rounded-circle" id="swiperAbout-prev">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" class="btn btn-icon btn-next rounded-circle" id="swiperAbout-next">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-5">
+              <h2>Почему стоит начать заниматься со мной ?</h2>
+              <p>Все программы основаны на многолетнем опыте в качестве тренера и спортсмена! Главным моментом моей
+                работы заключается в том, что тренировки адаптированы под Ваши цели, а значит результат будет
+                наверняка.</p>
+              <p>Выбирайте, тот метод, который удобен именно Вам!</p>
+              <p>Я помогла многим девушкам преобразить свое тело, после чего они стали чувствовать себя: сильными,
+                здоровыми, сексуальными.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#feedbackFormModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Стоимость тренировок -->
+    <section class="section py-lg" id="section-price">
+      <div class="bg-black" style="padding-top: 5rem; padding-bottom: 20rem;">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="mb-4">
-                <h1>Твой персональный тренер Vika.Sfit</h1>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="mb-3 text-white">
+                <h2>Стоимость тренировок</h2>
               </div>
               <div class="mb-5 color-6">
-                <p>Хочешь любить то, что видишь в зеркале и быть лучшей версией себя?</p>
-                <p>А еще ты ищешь таблетку, которая тебе в этом поможет?!</p>
-                <p>Мои программы и комплексы  - это то, что нужно, чтобы достичь твоих целей!</p>
+                <p>Индивидуальный подход к каждому клиенту — моё правило №1</p>
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                data-bs-target="#feedbackFormModal">Бесплатная консультация</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End section-01-->
-
-      <!-- Обо мне -->
-      <section class="section section-02 py-lg" id="section-02">
-        <div class="container">
-          <div class="row g-4">
-            <!-- order-lg-2 -->
-            <div class="col-lg-6">
-              <div class="px-5 py-3">
-                <div class="position-relative">
-                  <div class="swiper about-slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-01.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-02.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-03.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-04.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-05.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="rounded-3" src="img/about-06.jpg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-next" id="about-next"></div>
-                  <div class="swiper-button-prev" id="about-prev"></div>
-                </div>
-              </div>
-            </div>
-            <!-- order-lg-1 -->
-            <div class="col-lg-6">
-              <div class="py-3">
-                <div class="mb-5">
-                  <h2>Почему стоит начать заниматься со мной ?</h2>
-                  <p>Все программы основаны на многолетнем опыте в качестве тренера и спортсмена! Главным моментом моей работы заключается в том, что тренировки адаптированы под Ваши цели, а значит результат будет наверняка.</p>
-                  <p>Выбирайте, тот метод, который удобен именно Вам!</p>
-                  <p>Я помогла многим девушкам преобразить свое тело, после чего они стали чувствовать себя: сильными, здоровыми, сексуальными.</p>
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                  data-bs-target="#feedbackFormModal">Записаться</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End section-02-->
-
-      <!-- Стоимость тренировок -->
-      <section class="section section-04 py-lg" id="section-04">
-        <div class="section-04__container-01 bg-black">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 text-center">
-                <div class="mb-3 color-2">
-                  <h2>Стоимость тренировок</h2>
-                </div>
-                <div class="mb-5 color-6">
-                  <p>Индивидуальный подход к каждому клиенту — моё правило №1</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-04__container-02">
-          <div class="container">
-            <div class="position-relative">
-              <div class="swiper price-slider-01">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>Программа тренировок для зала</h3>
-                        <div class="price">
-                          <span class="text-decoration-line-through">990 руб</span>
-                          <strong class="fz-32">690 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Уменьшение жировой прослойки</li>
-                          <li>Формирование красивого рельефа тела</li>
-                          <li>Акцент на ягодичные и пресс</li>
-                          <li>В дополнение красивые плечи и руки</li>
-                          <li>Формат видеотренировок с моим участием</li>
-                          <li>Вы получаете 12 тренировок, которые выполняете в любое удобное время</li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>Программа тренировок для дома</h3>
-                        <div class="price">
-                          <span class="text-decoration-line-through">990 руб</span>
-                          <strong class="fz-32">690 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Уменьшение жировой прослойки</li>
-                          <li>Формирование красивого рельефа тела</li>
-                          <li>Акцент на ягодичные и пресс</li>
-                          <li>Формат видеотренировок с моим участием</li>
-                          <li>Вы получаете 12 тренировок, которые выполняете в любое удобное время</li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>Индивидуальное сопровождение</h3>
-                        <div class="price">
-                          <span class="text-decoration-line-through">7000 руб</span>
-                          <strong class="fz-32">5000 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Рассчитываю КБЖУ</li>
-                          <li>Расписываю примерный план питания</li>
-                          <li>Делюсь примерами рационов</li>
-                          <li>Помогаю скорректировать продуктовую корзину</li>
-                          <li>Замечу, у меня нет цели Вас заставить кушать только, то, что я говорю, у меня цель научить Вас составлять свой рацион, чтобы было комфортно и результаты не заставили себя ждать</li>
-                          <li>Составляю тренировочный план</li>
-                          <li>На связи с Вами, отвечаю на любые вопросы</li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>Индивидуальное сопровождение оффлайн</h3>
-                        <div class="price">
-                          <strong class="fz-32">Места ограничены</strong>
-                        </div>
-                        <p>Тренирую в современном фитнес-клубе Fitnation по адресу г. Москва, улица Генерала Белова, дом 8 <a href="https://yandex.ru/maps/-/CCUVrFCj3A" target="_blank" rel="nofollow">открыть в Яндекс.Картах</a></p>
-                        <ul class="description">
-                          <li>5 тренировок (1-2 раза в неделю) - <strong>11000 руб</strong></li>
-                          <li>10 тренировок (2-3 раза в неделю) - <strong>20000 руб</strong></li>
-                          <li>12 тренировок (3 раза в неделю) - <strong>22800 руб</strong></li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>Сборник рецептов</h3>
-                        <div class="price">
-                          <span class="text-decoration-line-through">790 руб</span>
-                          <strong class="fz-32">490 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Огромное количество рецептов сладких и основных приемов пищи</li>
-                          <li>Поможет Вам быстро, вкусно и разнообразно составлять свой рацион</li>
-                          <li>С этим сборником Вы поймете, что запретов в еде нет</li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>ЛФК комплексы</h3>
-                        <p>(При гиперлордозе, кифозе и сколиозе)</p>
-                        <div class="price">
-                          <span class="text-decoration-line-through">790 руб</span>
-                          <strong class="fz-32">490 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Вы получите 3 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а можно и каждый день</li>
-                          <li>Улучшите подвижность шейного, грудного, поясничного отделов</li>
-                          <li>Перестанете чувствовать зажатость при движениях</li>
-                          <li>Получите заряд бодрости и энергии</li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="pricing-box">
-                      <div class="flex-grow-2 mb-5">
-                        <h3>ЛФК при острых болях в пояснице</h3>
-                        <div class="price">
-                          <span class="text-decoration-line-through">790 руб</span>
-                          <strong class="fz-32">490 руб</strong>
-                        </div>
-                        <ul class="description">
-                          <li>Вы получите 2 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а можно и каждый день</li>
-                          <li>В момент острых болей и воспалений в пояснице (при грыжах и протрузиях)</li>
-                          <li><span class="text-uppercase fw-900">Если острая боль не проходит, то в этом случае необходимо обратиться у врачу и снять воспаление!</span></li>
-                        </ul>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#feedbackFormModal">Купить</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next price-01-next"></div>
-              <div class="swiper-button-prev price-01-prev"></div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!-- End section-04-->
-
-      <!-- Отзывы -->
-      <section class="section section-05 py-lg" id="section-05">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2>Отзывы о моей работе</h2>
-          </div>
-
-          <div class="position-relative">
-            <div class="swiper testimonials-slider">
-              <div class="swiper-wrapper">
-                <!-- item-1 -->
-                <div class="swiper-slide">
-                  <img class="rounded-3" src="img/otzyv-01.jpg" alt="">
-                </div>
-                <!-- item-2 -->
-                <div class="swiper-slide">
-                  <img class="rounded-3" src="img/otzyv-02.jpg" alt="">
-                </div>
-                <!-- item-3 -->
-                <div class="swiper-slide">
-                  <img class="rounded-3" src="img/otzyv-03.jpg" alt="">
-                </div>
-                <!-- item-4 -->
-                <div class="swiper-slide">
-                  <img class="rounded-3" src="img/otzyv-04.jpg" alt="">
-                </div>
-                <!-- item-5 -->
-                <div class="swiper-slide">
-                  <img class="rounded-3" src="img/otzyv-05.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next testimonials-next"></div>
-            <div class="swiper-button-prev testimonials-prev"></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer bg-black color-2" id="contact">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 order-3 order-lg-1">
-            <div class="py-3 text-center text-lg-start">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item">
-                  <a href="#policyModal" data-bs-toggle="modal" role="button">Политика конфиденциальности</a>
-                </li>
-                <!--<li class="list-inline-item">⋅</li>-->
-              </ul>
-              <p class="small">Copyright &copy; vmfit.ru
-                <script>document.write(new Date().getFullYear());</script>. Все права защищены.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 order-2 order-lg-2">
-            <div class="py-3 text-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="https://api.whatsapp.com/send?phone=79250026602" target="_blank"><i
-                      class="fab fa-whatsapp fa-2x"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://t.me/vika_sfit" target="_blank"><i class="fab fa-telegram-plane fa-2x"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="viber://chat?number=%2B79250026602" target="_blank"><i class="fab fa-viber fa-2x"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-3">
-            <div class="py-3 text-center text-lg-end">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="mailto:vikasfit@yandex.ru" target="_blank">vikasfit@yandex.ru</a>
-                </li>
-                <li>
-                  <a href="tel:+79250026602" target="_blank">+7 925 002-66-02</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End Footer-section-->
+      <div style="margin-top: -20rem; padding-bottom: 0;">
+        <div class="container">
+          <div class="swiper swiperPrice">
+            <div class="swiper-wrapper mb-5">
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">Программа тренировок для зала</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">990 руб</span>
+                      <strong class="fs-2">690 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Уменьшение жировой прослойки</p>
+                      <p>Формирование красивого рельефа тела</p>
+                      <p>Акцент на ягодичные и пресс</p>
+                      <p>В дополнение красивые плечи и руки</p>
+                      <p>Формат видеотренировок с моим участием</p>
+                      <p>Вы получаете 12 тренировок, которые выполняете в любое удобное время</p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">Программа тренировок для дома</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">990 руб</span>
+                      <strong class="fs-2">690 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Уменьшение жировой прослойки</p>
+                      <p>Формирование красивого рельефа тела</p>
+                      <p>Акцент на ягодичные и пресс</p>
+                      <p>Формат видеотренировок с моим участием</p>
+                      <p>Вы получаете 12 тренировок, которые выполняете в любое удобное время</p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">Индивидуальное сопровождение</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">7000 руб</span>
+                      <strong class="fs-2">5000 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Рассчитываю КБЖУ</p>
+                      <p>Расписываю примерный план питания</p>
+                      <p>Делюсь примерами рационов</p>
+                      <p>Помогаю скорректировать продуктовую корзину</p>
+                      <p>Замечу, у меня нет цели Вас заставить кушать только, то, что я говорю, у меня цель научить
+                        Вас составлять свой рацион, чтобы было комфортно и результаты не заставили себя ждать</p>
+                      <p>Составляю тренировочный план</p>
+                      <p>На связи с Вами, отвечаю на любые вопросы</p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">Индивидуальное сопровождение оффлайн</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <strong class="fs-2">Места ограничены</strong>
+                    </div>
+                    <div class="description">
+                      <p>Тренирую в современном фитнес-клубе Fitnation по адресу г. Москва, улица Генерала Белова, дом
+                        8 <a href="https://yandex.ru/maps/-/CCUVrFCj3A" target="_blank" rel="nofollow">открыть в
+                          Яндекс.Картах</a></p>
+                      <ul>
+                        <li>5 тренировок (1-2 раза в неделю) - <strong>11000 руб</strong></li>
+                        <li>10 тренировок (2-3 раза в неделю) - <strong>20000 руб</strong></li>
+                        <li>12 тренировок (3 раза в неделю) - <strong>22800 руб</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">Сборник рецептов</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
+                      <strong class="fs-2">490 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Огромное количество рецептов сладких и основных приемов пищи</p>
+                      <p>Поможет Вам быстро, вкусно и разнообразно составлять свой рацион</p>
+                      <p>С этим сборником Вы поймете, что запретов в еде нет</p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">ЛФК комплексы</span>
+                    <p class="mb-0">(При гиперлордозе, кифозе и сколиозе)</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
+                      <strong class="fs-2">490 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Вы получите 3 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а
+                        можно и каждый день</p>
+                      <p>Улучшите подвижность шейного, грудного, поясничного отделов</p>
+                      <p>Перестанете чувствовать зажатость при движениях</p>
+                      <p>Получите заряд бодрости и энергии</p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <article class="card card-pricing h-100">
+                  <div class="card-header text-center">
+                    <span class="h4">ЛФК при острых болях в пояснице</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center mb-3">
+                      <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
+                      <strong class="fs-2">490 руб</strong>
+                    </div>
+                    <div class="description">
+                      <p>Вы получите 2 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а
+                        можно и каждый день</p>
+                      <p>В момент острых болей и воспалений в пояснице (при грыжах и протрузиях)</p>
+                      <p><strong>Если острая боль не проходит, то в этом случае
+                          необходимо обратиться у врачу и снять воспаление!</strong></p>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Купить</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button type="button" class="btn btn-icon btn-prev rounded-circle" id="swiperPrice-prev">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button type="button" class="btn btn-icon btn-next rounded-circle" id="swiperPrice-next">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-  <!-- End Site-wrap -->
+    <!-- Отзывы -->
+    <section class="section py-lg" id="section-testimonial">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Отзывы о моей работе</h2>
+        </div>
+        <div class="position-relative">
+          <div class="swiper swiperTestimonial">
+            <div class="swiper-wrapper mb-5">
+              <div class="swiper-slide h-auto p-2">
+                <img class="rounded-3" src="img/otzyv-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <img class="rounded-3" src="img/otzyv-02.jpg" alt="">
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <img class="rounded-3" src="img/otzyv-03.jpg" alt="">
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <img class="rounded-3" src="img/otzyv-04.jpg" alt="">
+              </div>
+              <div class="swiper-slide h-auto p-2">
+                <img class="rounded-3" src="img/otzyv-05.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button type="button" class="btn btn-icon btn-prev rounded-circle" id="swiperTestimonial-prev">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button type="button" class="btn btn-icon btn-next rounded-circle" id="swiperTestimonial-next">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+  </main>
 
-  <!-- All Modals-->
+  <!-- FOOTER -->
+  <footer class="footer py-lg bg-black text-white" id="contact">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 order-3 order-lg-1">
+          <div class="py-3 text-center text-lg-start">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="policy.html" target="_blank">Политика конфиденциальности</a>
+              </li>
+            </ul>
+            <p class="small">Copyright &copy; vmfit.ru
+              <script>document.write(new Date().getFullYear());</script>. Все права защищены.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-2">
+          <div class="py-3 text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://api.whatsapp.com/send?phone=79250026602" target="_blank"><i class="bx bxl-whatsapp fs-1"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://t.me/vika_sfit" target="_blank"><i class="bx bxl-telegram fs-1"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="viber://chat?number=%2B79250026602" target="_blank"><i class="bx bxs-phone-call fs-1"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-3">
+          <div class="py-3 text-center text-lg-end">
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:vikasfit@yandex.ru" target="_blank">vikasfit@yandex.ru</a>
+              </li>
+              <li>
+                <a href="tel:+79250026602" target="_blank">+7 925 002-66-02</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Feedback Modal -->
-  <div class="modal fade" id="feedbackFormModal" aria-labelledby="feedbackFormModalLabel" aria-hidden="true"
-    tabindex="-1">
+  <div class="modal fade" id="feedbackFormModal" aria-labelledby="feedbackFormModalLabel" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-black p-4">
-          <h5 class="modal-title color-2" id="feedbackFormModalLabel">Отправить заявку</h5>
+          <p class="h5 modal-title text-white" id="feedbackFormModalLabel">Отправить заявку</p>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-0 p-4">
           <!-- itchief.ru Form-->
-          <!-- -->
           <!-- Форма обратной связи -->
           <div class="form__wrapper">
             <form id="feedbackForm" action="/form/process/process.php" enctype="multipart/form-data" novalidate>
@@ -463,8 +489,8 @@
               <div class="agreement">
                 <div class="form-check mb-3">
                   <input type="checkbox" name="agree" class="form-check-input" id="customCheck">
-                  <label class="form-check-label" for="customCheck">Я принимаю условия <a href="#policyModal"
-                      data-bs-toggle="modal" data-bs-dismiss="modal">пользовательского соглашения</a>.</label>
+                  <label class="form-check-label" for="customCheck">Я принимаю условия <a href="policy.html"
+                      target="_blank">пользовательского соглашения</a>.</label>
                 </div>
               </div>
               <!-- Сообщение -->
@@ -495,211 +521,8 @@
       </div>
     </div>
   </div>
-  <!-- End Feedback Modal-->
-
-  <!-- Policy Modal -->
-  <div class="info-modal modal fade" id="policyModal" aria-labelledby="policyModalLabel" aria-hidden="true"
-    tabindex="-1">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header border-0">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <!-- Policy Modal - Content-->
-                <h3>Политика в отношении обработки персональных данных</h3>
-                <hr>
-                <h4>Общие положения</h4>
-                <p>Настоящая политика обработки персональных данных составлена в соответствии с
-                  требованиями
-                  Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки
-                  персональных
-                  данных и меры по обеспечению безопасности персональных данных веб-сайта <a href="https://vmfit.ru"
-                    rel="noreferrer nofollow">https://vmfit.ru</a> (далее –
-                  Оператор).</p>
-                <p>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и
-                  свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на
-                  неприкосновенность
-                  частной жизни, личную и семейную тайну.</p>
-                <p>Настоящая политика Оператора в отношении обработки персональных данных
-                  (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях
-                  веб-сайта
-                  <a href="https://vmfit.ru" rel="noreferrer nofollow">https://vmfit.ru</a>.
-                </p>
-
-                <h4>1. Основные понятия, используемые в Политике.</h4>
-                <p><b>Автоматизированная обработка персональных данных</b> – обработка
-                  персональных данных с помощью средств вычислительной техники;</p>
-                <p><b>Блокирование персональных данных</b> – временное
-                  прекращение обработки персональных данных (за исключением случаев, если обработка необходима для
-                  уточнения
-                  персональных данных);</p>
-                <p><b>Веб-сайт</b> – совокупность графических и информационных материалов, а также программ для
-                  ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу <a
-                    href="https://vmfit.ru" rel="noreferrer nofollow">https://vmfit.ru</a>;</p>
-                <p><b>Информационная система
-                    персональных данных</b> — совокупность содержащихся в базах данных персональных данных, и
-                  обеспечивающих их
-                  обработку информационных технологий и технических средств;</p>
-                <p><b>Обезличивание персональных данных</b> — действия, в
-                  результате которых невозможно определить без использования дополнительной информации принадлежность
-                  персональных
-                  данных конкретному Пользователю или иному субъекту персональных данных;</p>
-                <p><b>Обработка персональных данных</b> –
-                  любое
-                  действие (операция) или совокупность действий (операций), совершаемых с использованием средств
-                  автоматизации
-                  или
-                  без использования таких средств с персональными данными, включая сбор, запись, систематизацию,
-                  накопление,
-                  хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение,
-                  предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
-                <p><b>Оператор</b> –
-                  государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или
-                  совместно с
-                  другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие
-                  цели
-                  обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции),
-                  совершаемые с персональными данными;</p>
-                <p><b>Персональные данные</b> – любая информация, относящаяся прямо или косвенно
-                  к
-                  определенному или определяемому Пользователю веб-сайта <a href="https://vmfit.ru"
-                    rel="noreferrer nofollow">https://vmfit.ru</a>;</p>
-                <p><b>Пользователь</b> – любой посетитель веб-сайта <a href="https://vmfit.ru"
-                    rel="noreferrer nofollow">https://vmfit.ru</a>;</p>
-                <p><b>Предоставление
-                    персональных данных</b> – действия, направленные на раскрытие персональных данных определенному лицу
-                  или
-                  определенному кругу лиц;</p>
-                <p><b>Распространение персональных данных</b> – любые действия, направленные на раскрытие
-                  персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с
-                  персональными
-                  данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой
-                  информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к
-                  персональным
-                  данным каким-либо иным способом;</p>
-                <p><b>Трансграничная передача персональных данных</b> – передача персональных данных
-                  на территорию иностранного государства органу власти иностранного государства, иностранному
-                  физическому
-                  или
-                  иностранному юридическому лицу;</p>
-                <p><b>Уничтожение персональных данных</b> – любые действия, в результате которых
-                  персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания
-                  персональных данных в информационной системе персональных данных и (или) результате которых
-                  уничтожаются
-                  материальные носители персональных данных.</p>
-
-                <h4>2. Оператор может обрабатывать следующие персональные данные Пользователя.</h4>
-                <p>Фамилия, имя, отчество;</p>
-                <p>Электронный адрес;</p>
-                <p>Номера телефонов;</p>
-                <p>Также на сайте происходит сбор и
-                  обработка
-                  обезличенных
-                  данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и
-                  Гугл
-                  Аналитика и других).</p>
-                <p>Вышеперечисленные данные далее по тексту Политики объединены общим понятием –
-                  <b>Персональные
-                    данные</b>.
-                </p>
-
-                <h4>3. Цели обработки персональных данных.</h4>
-                <p>Цель обработки персональных данных Пользователя — информирование
-                  Пользователя посредством отправки электронных писем.</p>
-                <p>Также Оператор имеет право направлять Пользователю
-                  уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь
-                  всегда
-                  может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной
-                  почты
-                  <a href="mailto:info@vmfit.ru">info@vmfit.ru</a> с пометкой «Отказ от уведомлениях о новых
-                  продуктах и
-                  услугах и специальных предложениях».
-                </p>
-                <p>Обезличенные данные Пользователей, собираемые с помощью сервисов
-                  интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения
-                  качества
-                  сайта
-                  и
-                  его содержания.
-                </p>
-                <h4>4. Правовые основания обработки персональных данных</h4>
-                <p>Оператор обрабатывает персональные данные Пользователя
-                  только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы,
-                  расположенные
-                  на сайте <a href="https://vmfit.ru" rel="noreferrer nofollow">https://vmfit.ru</a>.
-                  Заполняя
-                  соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое
-                  согласие
-                  с
-                  данной Политикой.</p>
-                <p>Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в
-                  настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии
-                  JavaScript).
-                </p>
-                <h4>5. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h4>
-                <p>Безопасность персональных
-                  данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и
-                  технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в
-                  области
-                  защиты персональных данных.</p>
-                <p>Оператор обеспечивает сохранность персональных данных и принимает все возможные
-                  меры, исключающие доступ к персональным данным неуполномоченных лиц.</p>
-                <p>Персональные данные Пользователя
-                  никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с
-                  исполнением
-                  действующего законодательства.</p>
-                <p>В случае выявления неточностей в персональных данных, Пользователь может
-                  актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты
-                  Оператора
-                  <a href="mailto:info@vmfit.ru">info@vmfit.ru</a> с пометкой «Актуализация персональных
-                  данных».
-                </p>
-                <p>Срок
-                  обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое
-                  согласие
-                  на обработку персональных данных, направив Оператору уведомление посредством электронной почты на
-                  электронный
-                  адрес Оператора <a href="mailto:info@vmfit.ru">info@vmfit.ru</a> с пометкой «Отзыв
-                  согласия на
-                  обработку
-                  персональных данных».
-                </p>
-                <h4>6. Трансграничная передача персональных данных</h4>
-                <p>Оператор до начала осуществления трансграничной передачи
-                  персональных данных обязан убедиться в том, что иностранным государством, на территорию которого
-                  предполагается
-                  осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных
-                  данных.</p>
-                <p>Трансграничная передача персональных данных на территории иностранных государств, не отвечающих
-                  вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме
-                  субъекта
-                  персональных данных на трансграничную передачу его персональных данных и/или исполнения договора,
-                  стороной
-                  которого является субъект персональных данных.</p>
-                <h4>7. Заключительные положения</h4>
-                <p>Пользователь может получить любые разъяснения по интересующим вопросам,
-                  касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты <a
-                    href="mailto:info@vmfit.ru">info@vmfit.ru</a>.</p>
-                <p>В данном документе будут отражены любые изменения
-                  политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой
-                  версией.</p>
-                <p>Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу <a
-                    href="https://vmfit.ru" rel="noreferrer nofollow">https://vmfit.ru</a>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Policy Modal-->
 
   <!-- All Scripts-->
-  <script src="js/fontawesome-v5-15-4.js" crossorigin="anonymous"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

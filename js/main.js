@@ -4,55 +4,62 @@ form1.init({
 	isHideForm: true,
 });
 
-const swiper1 = new Swiper('.about-slider', {
-	loop: false,
-	slidesPerView: 1,
+const swiperAbout = new Swiper('.swiperAbout', {
+	loop: true,
+	grabCursor: true,
 	autoplay: {
-		delay: 4000,
+		delay: 3500,
 		disableOnInteraction: false,
 	},
 	navigation: {
-		nextEl: '#about-next',
-		prevEl: '#about-prev',
+		nextEl: '#swiperAbout-next',
+		prevEl: '#swiperAbout-prev',
 	},
+	pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
 });
 
-const swiper2 = new Swiper('.price-slider-01', {
-	loop: false,
+const swiperPrice = new Swiper('.swiperPrice', {
 	slidesPerView: 1,
-	spaceBetween: 10,
+	grabCursor: true,
 	navigation: {
-		nextEl: '.price-01-next',
-		prevEl: '.price-01-prev',
+		nextEl: '#swiperPrice-next',
+		prevEl: '#swiperPrice-prev',
 	},
+	pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 15,
 		},
 		1200: {
 			slidesPerView: 3,
-			spaceBetween: 20,
 		},
 	},
 });
 
-const swiper4 = new Swiper('.testimonials-slider', {
-	loop: false,
+const swiperTestimonial = new Swiper('.swiperTestimonial', {
 	slidesPerView: 1,
-	spaceBetween: 10,
+	loop: true,
+	grabCursor: true,
 	navigation: {
-		nextEl: '.testimonials-next',
-		prevEl: '.testimonials-prev',
+		nextEl: '#swiperTestimonial-next',
+		prevEl: '#swiperTestimonial-prev',
 	},
+	pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 15,
 		},
 		992: {
 			slidesPerView: 4,
-			spaceBetween: 20,
 		},
 	},
 });
