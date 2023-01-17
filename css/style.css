@@ -159,6 +159,10 @@ a.link-primary {
 /*//////////////////////////////////////////////////////////////////
 [ BUTTONS ]*/
 
+.btn {
+    --bs-btn-font-weight: var(--fw-medium);
+}
+
 .btn-primary {
 	--bs-btn-color: #fff;
     --bs-btn-bg: #6366f1;
