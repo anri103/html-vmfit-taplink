@@ -334,14 +334,24 @@ img {
     background-size: cover;
 }
 
-.py-lg {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+.py-2rem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.py-xl {
-    padding-top: 7.5rem !important;
-    padding-bottom: 7.5rem !important;
+.py-4rem {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-5rem {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.py-7rem {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -442,9 +452,9 @@ img {
     --bs-card-cap-padding-y: 0.5rem;
     --bs-card-cap-padding-x: 1rem;
     --bs-card-cap-bg: transparent;
-    --bs-card-cap-color: ;
+    --bs-card-cap-color: var(--bs-body-color);
     --bs-card-height: ;
-    --bs-card-color: ;
+    --bs-card-color: var(--bs-body-color);
     --bs-card-bg: #fff;
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
