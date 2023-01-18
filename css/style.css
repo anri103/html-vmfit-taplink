@@ -466,6 +466,12 @@ img {
     --bs-card-bg: #fff;
 }
 
+.swiper {
+    --swiper-theme-color: #6366f1;
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-inactive-color: #6366f1;
+}
+
 .swiper .btn-prev,
 .swiper .btn-next {
     --btn-icon-size: 2rem;
