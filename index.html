@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Персональный тренер Виктория Карпунина Vikasfit</title>
+  <link rel="icon" href="favicon.svg" sizes="32x32">
+  <link rel="icon" href="favicon.svg" sizes="192x192">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Персональный тренер Виктория Карпунина Vika.Sfit</title>
   <meta name="description"
     content="Тренировки в фитес-зале Fitnation на Домодедовской в Москве с персональным тренером Викторией Vika.Sfit">
-  <meta name="author" content="Andrey Galkin">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-smooth-scroll="true" tabindex="0">
@@ -46,10 +46,10 @@
     <nav class="navbar navbar-expand-lg" id="mainNavbar">
       <div class="container">
 
-        <a class="navbar-brand" href="/">
-          <!-- <img class="logo" src="img/logo.png" alt="logo"> -->
-          Vmfit.ru
-        </a>
+        <div class="navbar-brand">
+          <img class="logo" src="img/logo.png" alt="logo">
+          <!-- Vmfit.ru -->
+        </div>
 
         <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,62 +58,59 @@
           <span></span>
         </button>
 
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarNav">
+        <div class="offcanvas offcanvas-end bg-dark" id="navbarNav" tabindex="-1">
           <div class="offcanvas-header justify-content-end">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item"><a class="nav-link" href="#section-hero">Главная</a></li>
-              <li class="nav-item"><a class="nav-link" href="#section-about">Обо мне</a></li>
-              <li class="nav-item"><a class="nav-link" href="#section-price">Цены</a></li>
-              <li class="nav-item"><a class="nav-link" href="#section-testimonial">Отзывы</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+              <li class="nav-item"><a class="nav-link" href="#price">Цены</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonial">Отзывы</a></li>
             </ul>
           </div>
         </div>
 
-        <button type="button" class="btn btn-primary fs-5 d-none d-lg-inline-block" data-bs-toggle="modal"
-          data-bs-target="#feedbackFormModal">Записаться</button>
+        <button type="button" class="btn btn-outline d-none d-lg-inline-block">Записаться</button>
 
       </div>
     </nav>
   </header>
 
-  <!-- SECTION-HERO -->
-  <section class="section section-hero py-5rem d-flex align-items-center text-white" id="section-hero"
-    style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="mb-4">
-            <h1>Твой персональный тренер Vika.Sfit</h1>
-          </div>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- SECTION-HERO -->
+    <section class="section section-hero" id="hero"
+      style="background-image: linear-gradient(180deg, rgb(0 0 0 / 33%), rgb(0 0 0 / 33%)), url(img/bg-hero.jpg);">
+      <div class="section-hero__inner">
+        <div class="container">
+          <h1 class="text-white mb-4">Твой персональный тренер Vika.Sfit</h1>
           <div class="mb-5 color-6">
             <p>Хочешь любить то, что видишь в зеркале и быть лучшей версией себя?</p>
             <p>А еще ты ищешь таблетку, которая тебе в этом поможет?!</p>
             <p>Мои программы и комплексы - это то, что нужно, чтобы достичь твоих целей!</p>
           </div>
-          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-            data-bs-target="#feedbackFormModal">Бесплатная консультация</button>
+          <button type="button" class="btn btn-primary btn-lg">Бесплатная консультация</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- MAIN -->
-  <main class="main py-5">
+    </section>
 
     <!-- SECTION-CTA -->
-    <section class="section py-4rem">
+    <section class="section section-cta" id="cta">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 text-center">
             <div class="bg-light border border-dark border-opacity-10 rounded-3 p-3 py-5 mb-5">
-              <p>10 домашних тренировок в прямом эфире в Телеграмм-канале + в записи в формате «Повторяй за мной», сможете
+              <p>10 домашних тренировок в прямом эфире в Телеграмм-канале + в записи в формате «Повторяй за мной»,
+                сможете
                 тренироваться в любое время</p>
-              <p>Домашние тренировки без дополнительного оборудования, направленные на похудение и проработку рельефа тела</p>
-              <p>Примеры тренировок для зала (подойдут даже новичку) - их выполняем если есть желание - это в виде бонуса</p>
+              <p>Домашние тренировки без дополнительного оборудования, направленные на похудение и проработку рельефа
+                тела</p>
+              <p>Примеры тренировок для зала (подойдут даже новичку) - их выполняем если есть желание - это в виде
+                бонуса</p>
               <p>Индивидуальный рассчет БЖУ</p>
               <p>Контроль формы и проведение замеров</p>
               <p>Контроль результатов (ежедневная проверка и контроль питания), лично мной, в личных переписках</p>
@@ -128,7 +125,7 @@
               <h4>БОНУСЫ:</h4>
               <p>Сборник с рецептами</p>
               <p>Чек-лист по борьбе с целлюлитом</p>
-              <p><button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#feedbackFormModal">Записаться</button></p>
+              <p><button type="button" class="btn btn-primary w-100">Записаться</button></p>
             </div>
           </div>
         </div>
@@ -136,29 +133,41 @@
     </section>
 
     <!-- SECTION-ABOUT -->
-    <section class="section py-4rem" id="section-about">
+    <section class="section section-about" id="about">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="swiper swiperAbout">
-              <div class="swiper-wrapper mb-5">
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-01.jpg" alt="">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="img/about-01.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-01.jpg" alt="">
+                  </a>
                 </div>
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-02.jpg" alt="">
+                <div class="swiper-slide">
+                  <a href="img/about-02.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-02.jpg" alt="">
+                  </a>
                 </div>
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-03.jpg" alt="">
+                <div class="swiper-slide">
+                  <a href="img/about-03.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-03.jpg" alt="">
+                  </a>
                 </div>
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-04.jpg" alt="">
+                <div class="swiper-slide">
+                  <a href="img/about-04.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-04.jpg" alt="">
+                  </a>
                 </div>
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-05.jpg" alt="">
+                <div class="swiper-slide">
+                  <a href="img/about-05.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-05.jpg" alt="">
+                  </a>
                 </div>
-                <div class="swiper-slide h-auto p-2">
-                  <img class="rounded-3" src="img/about-06.jpg" alt="">
+                <div class="swiper-slide">
+                  <a href="img/about-06.jpg" data-fancybox="gallery-about">
+                    <img class="img-fluid" src="img/about-06.jpg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -180,30 +189,26 @@
               <p>Я помогла многим девушкам преобразить свое тело, после чего они стали чувствовать себя: сильными,
                 здоровыми, сексуальными.</p>
             </div>
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-              data-bs-target="#feedbackFormModal">Записаться</button>
+            <button type="button" class="btn btn-primary">Записаться</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION-PRICE -->
-    <section class="section py-4rem bg-dark text-white" id="section-price">
+    <section class="section section-price" id="price">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <div class="mb-3">
-              <h2>Стоимость тренировок</h2>
-            </div>
-            <div class="mb-5 color-6">
-              <p>Индивидуальный подход к каждому клиенту — моё правило №1</p>
-            </div>
-          </div>
+
+        <div class="text-center mx-auto mb-5" style="max-width: 900px;">
+          <h2 class="text-white mb-3">Стоимость тренировок</h2>
+          <div class="color-6">Индивидуальный подход к каждому клиенту — моё правило №1</div>
         </div>
+
         <div class="swiper swiperPrice">
-          <div class="swiper-wrapper mb-5">
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">Программа тренировок для зала</p>
                 </div>
@@ -212,7 +217,7 @@
                     <span class="fs-3 text-muted text-decoration-line-through">990 руб</span>
                     <strong class="fs-2">690 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Уменьшение жировой прослойки</p>
                     <p>Формирование красивого рельефа тела</p>
                     <p>Акцент на ягодичные и пресс</p>
@@ -221,14 +226,14 @@
                     <p>Вы получаете 12 тренировок, которые выполняете в любое удобное время</p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">Программа тренировок для дома</p>
                 </div>
@@ -237,7 +242,7 @@
                     <span class="fs-3 text-muted text-decoration-line-through">990 руб</span>
                     <strong class="fs-2">690 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Уменьшение жировой прослойки</p>
                     <p>Формирование красивого рельефа тела</p>
                     <p>Акцент на ягодичные и пресс</p>
@@ -245,14 +250,14 @@
                     <p>Вы получаете 12 тренировок, которые выполняете в любое удобное время</p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">Индивидуальное сопровождение</p>
                 </div>
@@ -261,7 +266,7 @@
                     <span class="fs-3 text-muted text-decoration-line-through">7000 руб</span>
                     <strong class="fs-2">5000 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Рассчитываю КБЖУ</p>
                     <p>Расписываю примерный план питания</p>
                     <p>Делюсь примерами рационов</p>
@@ -272,40 +277,14 @@
                     <p>На связи с Вами, отвечаю на любые вопросы</p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
-                <div class="card-header text-center">
-                  <p class="h4 card-title">Индивидуальное сопровождение оффлайн</p>
-                </div>
-                <div class="card-body">
-                  <div class="text-center mb-3">
-                    <strong class="fs-2">Места ограничены</strong>
-                  </div>
-                  <div class="description">
-                    <p>Тренирую в современном фитнес-клубе Fitnation по адресу г. Москва, улица Генерала Белова, дом
-                      8 <a href="https://yandex.ru/maps/-/CCUVrFCj3A" target="_blank" rel="nofollow">открыть в
-                        Яндекс.Картах</a></p>
-                    <ul>
-                      <li>5 тренировок (1-2 раза в неделю) - <strong>11000 руб</strong></li>
-                      <li>10 тренировок (2-3 раза в неделю) - <strong>20000 руб</strong></li>
-                      <li>12 тренировок (3 раза в неделю) - <strong>22800 руб</strong></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
-                </div>
-              </article>
-            </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">Сборник рецептов</p>
                 </div>
@@ -314,20 +293,20 @@
                     <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
                     <strong class="fs-2">490 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Огромное количество рецептов сладких и основных приемов пищи</p>
                     <p>Поможет Вам быстро, вкусно и разнообразно составлять свой рацион</p>
                     <p>С этим сборником Вы поймете, что запретов в еде нет</p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">ЛФК комплексы</p>
                   <p class="card-subtitle">(При гиперлордозе, кифозе и сколиозе)</p>
@@ -337,7 +316,7 @@
                     <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
                     <strong class="fs-2">490 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Вы получите 3 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а
                       можно и каждый день</p>
                     <p>Улучшите подвижность шейного, грудного, поясничного отделов</p>
@@ -345,14 +324,14 @@
                     <p>Получите заряд бодрости и энергии</p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
-            <div class="swiper-slide h-auto p-2">
-              <article class="card card-pricing h-100">
+
+            <div class="swiper-slide">
+              <article class="card card-pricing">
                 <div class="card-header text-center">
                   <p class="h4 card-title">ЛФК при острых болях в пояснице</p>
                 </div>
@@ -361,7 +340,7 @@
                     <span class="fs-3 text-muted text-decoration-line-through">790 руб</span>
                     <strong class="fs-2">490 руб</strong>
                   </div>
-                  <div class="description">
+                  <div class="card-text">
                     <p>Вы получите 2 комплекса, которые нужно выполнять поочередно, не менее 3-х раз в неделю, а
                       можно и каждый день</p>
                     <p>В момент острых болей и воспалений в пояснице (при грыжах и протрузиях)</p>
@@ -369,47 +348,61 @@
                         необходимо обратиться у врачу и снять воспаление!</strong></p>
                   </div>
                 </div>
-                <div class="card-footer text-center">
-                  <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
-                    data-bs-target="#feedbackFormModal">Купить</button>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary w-100">Купить</button>
                 </div>
               </article>
             </div>
+
           </div>
+
           <div class="swiper-pagination"></div>
+
           <button type="button" class="btn btn-icon btn-prev rounded-circle" id="swiperPrice-prev">
             <i class="bx bx-chevron-left"></i>
           </button>
           <button type="button" class="btn btn-icon btn-next rounded-circle" id="swiperPrice-next">
             <i class="bx bx-chevron-right"></i>
           </button>
+
         </div>
+
       </div>
     </section>
 
     <!-- SECTION-TESTIMONIAL -->
-    <section class="section py-4rem" id="section-testimonial">
+    <section class="section section-testimonial" id="testimonial">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2>Отзывы о моей работе</h2>
-        </div>
+
+        <h2 class="text-center mb-5">Отзывы о моей работе</h2>
+
         <div class="position-relative">
           <div class="swiper swiperTestimonial">
-            <div class="swiper-wrapper mb-5">
-              <div class="swiper-slide h-auto p-2">
-                <img class="rounded-3" src="img/otzyv-01.jpg" alt="">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="img/otzyv-01.jpg" data-fancybox="gallery-testimonial">
+                  <img class="img-fluid" src="img/otzyv-01.jpg" alt="">
+                </a>
               </div>
-              <div class="swiper-slide h-auto p-2">
-                <img class="rounded-3" src="img/otzyv-02.jpg" alt="">
+              <div class="swiper-slide">
+                <a href="img/otzyv-02.jpg" data-fancybox="gallery-testimonial">
+                  <img class="img-fluid" src="img/otzyv-02.jpg" alt="">
+                </a>
               </div>
-              <div class="swiper-slide h-auto p-2">
-                <img class="rounded-3" src="img/otzyv-03.jpg" alt="">
+              <div class="swiper-slide">
+                <a href="img/otzyv-03.jpg" data-fancybox="gallery-testimonial">
+                  <img class="img-fluid" src="img/otzyv-03.jpg" alt="">
+                </a>
               </div>
-              <div class="swiper-slide h-auto p-2">
-                <img class="rounded-3" src="img/otzyv-04.jpg" alt="">
+              <div class="swiper-slide">
+                <a href="img/otzyv-04.jpg" data-fancybox="gallery-testimonial">
+                  <img class="img-fluid" src="img/otzyv-04.jpg" alt="">
+                </a>
               </div>
-              <div class="swiper-slide h-auto p-2">
-                <img class="rounded-3" src="img/otzyv-05.jpg" alt="">
+              <div class="swiper-slide">
+                <a href="img/otzyv-05.jpg" data-fancybox="gallery-testimonial">
+                  <img class="img-fluid" src="img/otzyv-05.jpg" alt="">
+                </a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -421,120 +414,24 @@
             </button>
           </div>
         </div>
+
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer py-4rem bg-black text-white" id="contact">
+  <footer class="footer bg-black">
     <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4 text-center order-lg-2">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="https://api.whatsapp.com/send?phone=79250026602" target="_blank"><i
-                  class="bx bxl-whatsapp fs-1"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://t.me/vika_sfit" target="_blank"><i class="bx bxl-telegram fs-1"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="viber://chat?number=%2B79250026602" target="_blank"><i class="bx bxs-phone-call fs-1"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 text-center text-lg-end order-lg-3">
-          <ul class="list-unstyled">
-            <li>
-              <a href="mailto:vikasfit@yandex.ru" target="_blank">vikasfit@yandex.ru</a>
-            </li>
-            <li>
-              <a href="tel:+79250026602" target="_blank">+7 925 002-66-02</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 text-center text-lg-start order-lg-1">
-          <p class="small">&copy; Vmfit.ru
-            <script>document.write(new Date().getFullYear());</script>. Все права защищены.
-          </p>
-        </div>
-      </div>
+      <div class="text-center text-white small">&copy; vmfit.ru 2020. Все права защищены.</div>
     </div>
   </footer>
 
-  <!-- FEEDBACK FORM -->
-  <div class="modal fade" id="feedbackFormModal" aria-labelledby="feedbackFormModalLabel" aria-hidden="true"
-    tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-black p-4">
-          <p class="h5 modal-title text-white" id="feedbackFormModalLabel">Отправить заявку</p>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body border-0 p-4">
-          <!-- itchief.ru Form-->
-          <!-- Форма обратной связи -->
-          <div class="form__wrapper">
-            <form id="feedbackForm" action="/form/process/process.php" enctype="multipart/form-data" novalidate>
-              <!-- Имя пользователя -->
-              <div class="form-floating mb-3">
-                <input id="name" type="text" name="name" class="form-control" value="" placeholder="Иван Иванов"
-                  minlength="2" maxlength="30" required="required">
-                <label for="name" class="form-label">Ваше имя</label>
-                <div class="invalid-feedback"></div>
-              </div>
-              <!-- Телефон пользователя -->
-              <div class="form-floating mb-3">
-                <input id="phone" type="tel" name="phone" class="form-control" value="" placeholder="977-888-99-99"
-                  aria-describedby="basic-addon1" minlength="10" maxlength="20" required="required">
-                <label for="phone" class="form-label">Телефон</label>
-                <div class="invalid-feedback"></div>
-              </div>
-              <!-- Скрытое поле -->
-              <input type="hidden" name="captcha">
-              <!-- Пользовательское солашение -->
-              <div class="agreement">
-                <div class="form-check mb-3">
-                  <input type="checkbox" name="agree" class="form-check-input" id="customCheck">
-                  <label class="form-check-label" for="customCheck">Я принимаю условия пользовательского соглашения.</label>
-                </div>
-              </div>
-              <!-- Сообщение -->
-              <div class="alert alert-danger form-error d-none">
-                Исправьте данные и отправьте форму ещё раз.
-              </div>
-              <!-- Индикация загрузки данных формы на сервер -->
-              <div class="progress mb-3 d-none">
-                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100" style="width: 0">
-                  <span class="sr-only">0%</span>
-                </div>
-              </div>
-              <!-- Кнопка для отправки формы  disabled="disabled"-->
-              <div class="submit">
-                <button type="submit" class="btn btn-primary btn-lg w-100" disabled="disabled">Отправить
-                  сообщение</button>
-              </div>
-            </form>
-            <!-- Сообщение об успешной отправки формы -->
-            <div class="alert alert-success form-success mb-0 d-none">
-              Форма успешно отправлена. Нажмите на
-              <a href="#" data-form="#feedbackForm">ссылку</a>, чтобы отправить ещё одно сообщение.
-            </div>
-          </div>
-          <!-- END itchief.ru Form-->
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- SCRIPTS -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/process-forms.js"></script>
-  <script src="js/main.js"></script>
+  <script src="modules/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="modules/swiper/swiper-bundle.min.js"></script>
+  <script src="modules/fancybox/fancybox.umd.js"></script>
+  <script src="app.js"></script>
 
 </body>
 
