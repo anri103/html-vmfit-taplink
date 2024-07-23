@@ -11,6 +11,7 @@ responsiveNavItems.map(function (responsiveNavItem) {
 
 // swiperAbout
 const swiperAbout = new Swiper('.swiperAbout', {
+	spaceBetween: 32,
 	loop: true,
 	grabCursor: true,
 	autoplay: {
@@ -18,8 +19,8 @@ const swiperAbout = new Swiper('.swiperAbout', {
 		disableOnInteraction: false,
 	},
 	navigation: {
-		nextEl: '#swiperAbout-next',
-		prevEl: '#swiperAbout-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
         el: '.swiper-pagination',
@@ -29,47 +30,34 @@ const swiperAbout = new Swiper('.swiperAbout', {
 
 // swiperPrice
 const swiperPrice = new Swiper('.swiperPrice', {
-	slidesPerView: 1,
+	slidesPerView: 'auto',
+	spaceBetween: 32,
+	loop: false,
 	grabCursor: true,
 	navigation: {
-		nextEl: '#swiperPrice-next',
-		prevEl: '#swiperPrice-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
-	breakpoints: {
-		768: {
-			slidesPerView: 2,
-		},
-		1200: {
-			slidesPerView: 3,
-		},
-	},
 });
 
 // swiperTestimonial
 const swiperTestimonial = new Swiper('.swiperTestimonial', {
-	slidesPerView: 1,
+	slidesPerView: 'auto',
+	spaceBetween: 32,
 	loop: true,
 	grabCursor: true,
 	navigation: {
-		nextEl: '#swiperTestimonial-next',
-		prevEl: '#swiperTestimonial-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
-	breakpoints: {
-		768: {
-			slidesPerView: 2,
-		},
-		992: {
-			slidesPerView: 4,
-		},
-	},
 });
 
 // fancybox
