@@ -11,27 +11,19 @@ responsiveNavItems.map(function (responsiveNavItem) {
 
 // swiperAbout
 const swiperAbout = new Swiper('.swiperAbout', {
-	spaceBetween: 32,
 	loop: true,
 	grabCursor: true,
 	autoplay: {
 		delay: 3500,
 		disableOnInteraction: false,
 	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-    },
+	effect: 'fade',
 });
 
 // swiperPrice
 const swiperPrice = new Swiper('.swiperPrice', {
 	slidesPerView: 'auto',
-	spaceBetween: 32,
+	spaceBetween: 16,
 	loop: false,
 	grabCursor: true,
 	navigation: {
@@ -42,12 +34,17 @@ const swiperPrice = new Swiper('.swiperPrice', {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
+	breakpoints: {
+		992: {
+			spaceBetween: 32,
+		}
+	},
 });
 
 // swiperTestimonial
 const swiperTestimonial = new Swiper('.swiperTestimonial', {
-	slidesPerView: 'auto',
-	spaceBetween: 32,
+	slidesPerView: 1,
+	spaceBetween: 16,
 	loop: true,
 	grabCursor: true,
 	navigation: {
@@ -58,6 +55,12 @@ const swiperTestimonial = new Swiper('.swiperTestimonial', {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
+	breakpoints: {
+		992: {
+			slidesPerView: 4,
+			spaceBetween: 32,
+		}
+	},
 });
 
 // fancybox
