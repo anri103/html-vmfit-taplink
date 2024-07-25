@@ -428,7 +428,7 @@ svg {
     color: var(--vm-card-title-color);
 }
 
-.card-text:last-child {
+.card-text p:last-child {
     margin-bottom: 0;
 }
 
@@ -632,6 +632,7 @@ svg {
 }
 
 .list-marker {
+    margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
@@ -695,22 +696,25 @@ svg {
 .section-price__cards-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem 1rem;
+    gap: 2rem 1rem;
+}
+
+.card-pricing {
+    --vm-card-border-radius: 1rem;
+    padding: 1.5rem 0;
 }
 
 .card-pricing .card-header {
     text-align: center;
-    padding-top: calc(var(--vm-card-cap-padding-y) + var(--vm-card-title-spacer-y));
 }
 
 .card-pricing .card-footer {
-    padding-bottom: calc(var(--vm-card-cap-padding-y) + var(--vm-card-title-spacer-y));
+    --vm-card-cap-padding-x: 5rem;
 }
 
 .card-pricing .card-price {
     text-align: center;
     padding: var(--vm-card-cap-padding-y) var(--vm-card-cap-padding-x);
-    border-bottom: var(--vm-card-border-width) solid var(--vm-card-border-color);
 }
 
 .card-pricing .card-price__old {
